@@ -1,0 +1,60 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.Welcome-home {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    display: none; /* Hide for now, useful for mobile menu */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f0a500;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul {
+        display: none; /* Toggle display on click for mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+    }
+
+    ul.show {
+        display: flex;
+    }
+}
