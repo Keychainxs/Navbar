@@ -13,7 +13,10 @@ export const Navbar = () => {
                 
         <div>
             <nav>
-                    <h1 className="Welcome-home"><NavLink to ='/'>Welcome Home</NavLink></h1>
+                    <h1 className="Welcome-home">
+                        
+                        <NavLink to ='/'>Welcome Home</NavLink>
+                    </h1>
                         <div className="menu" onClick={toggleMenu}>
                             <span></span>
                             <span></span>
